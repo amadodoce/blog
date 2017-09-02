@@ -1,0 +1,10 @@
+<h1>Blog posts</h1>
+
+<ul *ngFor="let post of posts">
+  <li>
+    <span>{{post.title}}</span>
+    <button [routerLink]="'/detail/' + post.id" >Viwe details</button>
+  </li>
+</ul>
+
+<button [routerLink]="'/newpost'">Add new post</button>

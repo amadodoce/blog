@@ -1,0 +1,12 @@
+<h1>
+  New post
+</h1>
+<div class="textboxNew">
+  <input [(ngModel)]="newtitle" placeholder="new title">
+</div>
+<div class="newDesc">
+  <textarea [(ngModel)]="newDescription" class="textArea">
+  </textarea>
+</div>
+<button (click)="newPost()">Add</button>
+<button (click)="goBack()">Back</button>

@@ -61,7 +61,9 @@ export class BlogService {
 
           let str: string= this.localservice.get<string>(this.SERVICEKEY);
           let postlist: BlogPostItem[] = JSON.parse(str);
-
+          if(!postlist){
+            postlist=[];
+          }
           postlist.push(newPost);
 
           let newStr= JSON.stringify(postlist);

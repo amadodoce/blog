@@ -1,0 +1,12 @@
+<h1>
+  Post details
+</h1>
+<div class="postDetail">
+  <h3>title</h3><p>{{post.title}}</p>
+  <h4>date</h4><p>{{post.createdAt | date: 'short'}}</p>
+  <label>description</label>
+  <p>{{post.description}}</p>
+</div>
+
+<button (click)="deletePost(post.id)">Delete</button>
+<button (click)="goBack()">Back</button>
